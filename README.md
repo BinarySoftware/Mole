@@ -6,4 +6,6 @@ Built for running on macOS Mojave with Swift 4.2, updated frequently to make sur
 
 Great thanks to PorridgeBear for his IMVS project - I updated it to work with swift 4.2 and based this app mostly on it.
 
-Mole is released under [the MIT Licence](http://opensource.org/licenses/MIT).
+Mole is released under GNU General Public License
+
+
