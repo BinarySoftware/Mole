@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaDFRPlugin" version="14460.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.SceneKitIBPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="the Touch Bar" minToolsVersion="8.1" minSystemVersion="10.12.2" requiredIntegratedClassName="NSTouchBar"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +677,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Mole" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,36 +686,230 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Mole" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Mole - Molecular Visualiser" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="contentRect" x="196" y="240" width="600" height="300"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+                        <value key="minSize" type="size" width="600" height="300"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
+                    <touchBar key="touchBar" id="PVl-9N-RZK">
+                        <touchBarItems>
+                            <touchBarItem id="oJ2-y1-aYj">
+                                <viewController key="viewController" id="Uhn-Ab-ZGz">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mzs-Y6-mrO">
+                                        <rect key="frame" x="0.0" y="-11" width="156" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Colour Partricles" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="a8u-Bk-CTB">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ColourParticles:" target="B8D-0N-5wS" id="vBk-Vz-Xww"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="144" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="mco-Y2-Bah">
+                                <viewController key="viewController" id="lZh-Kn-edD">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NJz-WF-BfX">
+                                        <rect key="frame" x="0.0" y="-11" width="138" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Colour Amino" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="scf-yB-5WM">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ColourAmino:" target="B8D-0N-5wS" id="szr-bM-tbB"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="126" height="30"/>
+                            </touchBarItem>
+                            <touchBarSpacerItem identifier="NSTouchBarItemIdentifierFlexibleSpace" id="yUl-Hb-pZH"/>
+                            <touchBarItem id="1XT-VS-I48">
+                                <viewController key="viewController" id="rgr-76-b4O">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nf6-Va-LVn">
+                                        <rect key="frame" x="0.0" y="-11" width="84" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Sticks" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="qSf-gT-nqC">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ShowStciks:" target="B8D-0N-5wS" id="oCt-F6-ycw"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="72" height="30"/>
+                            </touchBarItem>
+                            <touchBarItem id="YOX-31-6ch">
+                                <viewController key="viewController" id="AAn-Uk-EQ3">
+                                    <button key="view" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ObU-9N-skz">
+                                        <rect key="frame" x="0.0" y="-11" width="90" height="41"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="push" title="Balls" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vY9-U2-OIM">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" usesAppearanceFont="YES"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="ShowBalls:" target="B8D-0N-5wS" id="bD7-o2-slX"/>
+                                        </connections>
+                                    </button>
+                                </viewController>
+                                <size key="designTimeSize" width="90" height="30"/>
+                            </touchBarItem>
+                        </touchBarItems>
+                        <connections>
+                            <outlet property="delegate" destination="ZnT-Kz-OZh" id="8Qn-XL-KPq"/>
+                        </connections>
+                    </touchBar>
                     <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                        <segue destination="pPd-Vj-uu8" kind="relationship" relationship="window.shadowedContentViewController" id="K2o-zB-yul"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="hIz-AP-VOD">
+        <!--Split View Controller-->
+        <scene sceneID="eNB-18-CaS">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <splitViewController id="pPd-Vj-uu8" customClass="SplitViewController" customModule="Mole" customModuleProvider="target" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="oZk-gm-AZH"/>
+                        <splitViewItem id="btw-t0-jUG"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="Spu-Oo-5Yi">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                        <connections>
+                            <outlet property="delegate" destination="pPd-Vj-uu8" id="PoA-xy-7nY"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="detail" destination="btw-t0-jUG" id="feO-PH-HWc"/>
+                        <outlet property="splitView" destination="Spu-Oo-5Yi" id="y2d-QW-4L5"/>
+                        <outlet property="tableView" destination="oZk-gm-AZH" id="KB6-D4-l53"/>
+                        <segue destination="s6I-6f-Crs" kind="relationship" relationship="splitItems" id="jhX-ua-g0Q"/>
+                        <segue destination="ZnT-Kz-OZh" kind="relationship" relationship="splitItems" id="ck3-fu-Wl6"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="h2l-ST-GId" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="75" y="699"/>
+        </scene>
+        <!--Molecule Table View Controller-->
+        <scene sceneID="8BT-vQ-HU0">
+            <objects>
+                <viewController id="s6I-6f-Crs" customClass="MoleculeTableViewController" customModule="Mole" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="QgO-FX-Img">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="35" horizontalPageScroll="10" verticalLineScroll="35" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEX-Dx-ITS">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                <clipView key="contentView" id="QVC-9f-cd3">
+                                    <rect key="frame" x="1" y="1" width="248" height="298"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="30" rowSizeStyle="automatic" viewBased="YES" id="9pw-Bf-zn9">
+                                            <rect key="frame" x="0.0" y="0.0" width="248" height="298"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="0.0" height="5"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn width="245" minWidth="40" maxWidth="1000" id="DRf-hV-lZ2">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="KsN-c1-5xr">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="Cell" id="xZf-v9-sEx">
+                                                            <rect key="frame" x="0.0" y="2" width="245" height="30"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="hOv-4U-z3X">
+                                                                    <rect key="frame" x="0.0" y="6" width="245" height="19"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="justified" title="Table View Cell" id="9sf-av-1eo">
+                                                                        <font key="font" metaFont="system" size="16"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="hOv-4U-z3X" firstAttribute="centerY" secondItem="xZf-v9-sEx" secondAttribute="centerY" id="HpY-ax-92F"/>
+                                                                <constraint firstItem="hOv-4U-z3X" firstAttribute="centerX" secondItem="xZf-v9-sEx" secondAttribute="centerX" id="UJm-Fu-RzC"/>
+                                                                <constraint firstItem="hOv-4U-z3X" firstAttribute="leading" secondItem="xZf-v9-sEx" secondAttribute="leading" constant="2" id="VOZ-Dy-EMB"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="hOv-4U-z3X" id="6Eg-Jn-JWn"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="s6I-6f-Crs" id="SeO-qr-Pfw"/>
+                                                <outlet property="delegate" destination="s6I-6f-Crs" id="dfT-Wv-fs7"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                </clipView>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BsY-Zg-sTc"/>
+                                </constraints>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="0dz-Rg-HMn">
+                                    <rect key="frame" x="1" y="283" width="198" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="RA2-Cj-twT">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YEX-Dx-ITS" firstAttribute="top" secondItem="QgO-FX-Img" secondAttribute="top" id="IhG-tL-nz8"/>
+                            <constraint firstAttribute="bottom" secondItem="YEX-Dx-ITS" secondAttribute="bottom" id="WOa-6m-bTS"/>
+                            <constraint firstItem="YEX-Dx-ITS" firstAttribute="leading" secondItem="QgO-FX-Img" secondAttribute="leading" id="cxQ-r1-7c4"/>
+                            <constraint firstAttribute="trailing" secondItem="YEX-Dx-ITS" secondAttribute="trailing" id="i8Z-Wu-eua"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9pw-Bf-zn9" id="KEB-jP-Zih"/>
+                    </connections>
+                </viewController>
+                <customObject id="AKe-4v-e7c" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724" y="498"/>
+        </scene>
+        <!--Molecule View Controller-->
+        <scene sceneID="qmC-BG-Btb">
+            <objects>
+                <viewController identifier="MoleculeViewController" storyboardIdentifier="MoleculeViewController" id="ZnT-Kz-OZh" customClass="MoleculeViewController" customModule="Mole" customModuleProvider="target" sceneMemberID="viewController">
+                    <sceneView key="view" id="bll-Ev-rtt">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </sceneView>
+                </viewController>
+                <customObject id="fcg-1k-EeI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="868"/>
         </scene>
     </scenes>
 </document>

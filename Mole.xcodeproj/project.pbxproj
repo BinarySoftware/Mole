@@ -7,20 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527133CF21A5FCAD006C9521 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527133CE21A5FCAD006C9521 /* WindowController.swift */; };
+		527133D121A6004D006C9521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527133D021A6004D006C9521 /* Assets.xcassets */; };
 		5278993021A4863100F01F18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278992F21A4863100F01F18 /* AppDelegate.swift */; };
-		5278993221A4863100F01F18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278993121A4863100F01F18 /* ViewController.swift */; };
-		5278993421A4863100F01F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5278993321A4863100F01F18 /* Assets.xcassets */; };
 		5278993721A4863100F01F18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5278993521A4863100F01F18 /* Main.storyboard */; };
+		5278995E21A48AA000F01F18 /* b12.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994021A48AA000F01F18 /* b12.pdb */; };
+		5278995F21A48AA000F01F18 /* graphite.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994121A48AA000F01F18 /* graphite.pdb */; };
+		5278996021A48AA000F01F18 /* cys.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994221A48AA000F01F18 /* cys.pdb */; };
+		5278996121A48AA000F01F18 /* 1iyu.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994321A48AA000F01F18 /* 1iyu.pdb */; };
+		5278996221A48AA000F01F18 /* hemeo2.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994421A48AA000F01F18 /* hemeo2.pdb */; };
+		5278996321A48AA000F01F18 /* pcl5.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994521A48AA000F01F18 /* pcl5.pdb */; };
+		5278996421A48AA000F01F18 /* igg1-cac.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994621A48AA000F01F18 /* igg1-cac.pdb */; };
+		5278996521A48AA000F01F18 /* ala.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994721A48AA000F01F18 /* ala.pdb */; };
+		5278996621A48AA000F01F18 /* atp.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994821A48AA000F01F18 /* atp.pdb */; };
+		5278996721A48AA000F01F18 /* diamond.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994921A48AA000F01F18 /* diamond.pdb */; };
+		5278996821A48AA000F01F18 /* 132l.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994A21A48AA000F01F18 /* 132l.pdb */; };
+		5278996921A48AA000F01F18 /* 1CRN.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994B21A48AA000F01F18 /* 1CRN.pdb */; };
+		5278996A21A48AA000F01F18 /* octane.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994C21A48AA000F01F18 /* octane.pdb */; };
+		5278996B21A48AA000F01F18 /* nacl.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994D21A48AA000F01F18 /* nacl.pdb */; };
+		5278996C21A48AA000F01F18 /* fullerene.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994E21A48AA000F01F18 /* fullerene.pdb */; };
+		5278996D21A48AA000F01F18 /* 1pse.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278994F21A48AA000F01F18 /* 1pse.pdb */; };
+		5278996E21A48AA000F01F18 /* 1bbe.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995021A48AA000F01F18 /* 1bbe.pdb */; };
+		5278996F21A48AA000F01F18 /* c2h2.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995121A48AA000F01F18 /* c2h2.pdb */; };
+		5278997021A48AA000F01F18 /* streptomycin.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995221A48AA000F01F18 /* streptomycin.pdb */; };
+		5278997121A48AA000F01F18 /* 3RFM.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995321A48AA000F01F18 /* 3RFM.pdb */; };
+		5278997221A48AA000F01F18 /* dna.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995421A48AA000F01F18 /* dna.pdb */; };
+		5278997321A48AA000F01F18 /* 1CF7.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995521A48AA000F01F18 /* 1CF7.pdb */; };
+		5278997421A48AA000F01F18 /* trp.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995621A48AA000F01F18 /* trp.pdb */; };
+		5278997521A48AA000F01F18 /* benzene.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995721A48AA000F01F18 /* benzene.pdb */; };
+		5278997621A48AA000F01F18 /* 3INS.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995821A48AA000F01F18 /* 3INS.pdb */; };
+		5278997721A48AA000F01F18 /* hemeco.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995921A48AA000F01F18 /* hemeco.pdb */; };
+		5278997821A48AA000F01F18 /* plp.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995A21A48AA000F01F18 /* plp.pdb */; };
+		5278997921A48AA000F01F18 /* lys195k.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995B21A48AA000F01F18 /* lys195k.pdb */; };
+		5278997A21A48AA000F01F18 /* zdna.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995C21A48AA000F01F18 /* zdna.pdb */; };
+		5278997B21A48AA000F01F18 /* gc-zdna.pdb in Resources */ = {isa = PBXBuildFile; fileRef = 5278995D21A48AA000F01F18 /* gc-zdna.pdb */; };
+		5278998221A48C1F00F01F18 /* SCNVector3Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998121A48C1F00F01F18 /* SCNVector3Extensions.swift */; };
+		5278998821A48C5D00F01F18 /* Colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998321A48C5D00F01F18 /* Colour.swift */; };
+		5278998A21A48C5D00F01F18 /* ColourFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998521A48C5D00F01F18 /* ColourFactory.swift */; };
+		5278998B21A48C5D00F01F18 /* RadiusFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998621A48C5D00F01F18 /* RadiusFactory.swift */; };
+		5278998C21A48C5D00F01F18 /* RenderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998721A48C5D00F01F18 /* RenderFactory.swift */; };
+		5278999021A48C7200F01F18 /* MoleculeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998D21A48C7100F01F18 /* MoleculeTableViewController.swift */; };
+		5278999121A48C7200F01F18 /* MoleculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278998E21A48C7100F01F18 /* MoleculeViewController.swift */; };
+		5278999521A4914400F01F18 /* PDBRestWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999321A4914400F01F18 /* PDBRestWebService.swift */; };
+		5278999621A4914400F01F18 /* PDBLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999421A4914400F01F18 /* PDBLoader.swift */; };
+		527899A221A4917700F01F18 /* Octree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999721A4917600F01F18 /* Octree.swift */; };
+		527899A321A4917700F01F18 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999821A4917600F01F18 /* Molecule.swift */; };
+		527899A421A4917700F01F18 /* AtomCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999921A4917600F01F18 /* AtomCloud.swift */; };
+		527899A521A4917700F01F18 /* PeriodicTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999A21A4917600F01F18 /* PeriodicTable.swift */; };
+		527899A621A4917700F01F18 /* Point3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999B21A4917600F01F18 /* Point3D.swift */; };
+		527899A721A4917700F01F18 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999C21A4917600F01F18 /* Chain.swift */; };
+		527899A821A4917700F01F18 /* SecondaryStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999D21A4917600F01F18 /* SecondaryStructure.swift */; };
+		527899A921A4917700F01F18 /* Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999E21A4917600F01F18 /* Bond.swift */; };
+		527899AA21A4917700F01F18 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278999F21A4917700F01F18 /* State.swift */; };
+		527899AB21A4917700F01F18 /* Residue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527899A021A4917700F01F18 /* Residue.swift */; };
+		527899AC21A4917700F01F18 /* Atom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527899A121A4917700F01F18 /* Atom.swift */; };
+		52C98A8B21A5B5AC000817A7 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C98A8A21A5B5AC000817A7 /* SplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		527133CE21A5FCAD006C9521 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		527133D021A6004D006C9521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5278992C21A4863100F01F18 /* Mole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5278992F21A4863100F01F18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5278993121A4863100F01F18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5278993321A4863100F01F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5278993621A4863100F01F18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5278993821A4863100F01F18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5278993921A4863100F01F18 /* Mole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mole.entitlements; sourceTree = "<group>"; };
+		5278994021A48AA000F01F18 /* b12.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = b12.pdb; sourceTree = "<group>"; };
+		5278994121A48AA000F01F18 /* graphite.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graphite.pdb; sourceTree = "<group>"; };
+		5278994221A48AA000F01F18 /* cys.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cys.pdb; sourceTree = "<group>"; };
+		5278994321A48AA000F01F18 /* 1iyu.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1iyu.pdb; sourceTree = "<group>"; };
+		5278994421A48AA000F01F18 /* hemeo2.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hemeo2.pdb; sourceTree = "<group>"; };
+		5278994521A48AA000F01F18 /* pcl5.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcl5.pdb; sourceTree = "<group>"; };
+		5278994621A48AA000F01F18 /* igg1-cac.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "igg1-cac.pdb"; sourceTree = "<group>"; };
+		5278994721A48AA000F01F18 /* ala.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ala.pdb; sourceTree = "<group>"; };
+		5278994821A48AA000F01F18 /* atp.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = atp.pdb; sourceTree = "<group>"; };
+		5278994921A48AA000F01F18 /* diamond.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamond.pdb; sourceTree = "<group>"; };
+		5278994A21A48AA000F01F18 /* 132l.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 132l.pdb; sourceTree = "<group>"; };
+		5278994B21A48AA000F01F18 /* 1CRN.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1CRN.pdb; sourceTree = "<group>"; };
+		5278994C21A48AA000F01F18 /* octane.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = octane.pdb; sourceTree = "<group>"; };
+		5278994D21A48AA000F01F18 /* nacl.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nacl.pdb; sourceTree = "<group>"; };
+		5278994E21A48AA000F01F18 /* fullerene.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fullerene.pdb; sourceTree = "<group>"; };
+		5278994F21A48AA000F01F18 /* 1pse.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1pse.pdb; sourceTree = "<group>"; };
+		5278995021A48AA000F01F18 /* 1bbe.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1bbe.pdb; sourceTree = "<group>"; };
+		5278995121A48AA000F01F18 /* c2h2.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = c2h2.pdb; sourceTree = "<group>"; };
+		5278995221A48AA000F01F18 /* streptomycin.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = streptomycin.pdb; sourceTree = "<group>"; };
+		5278995321A48AA000F01F18 /* 3RFM.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3RFM.pdb; sourceTree = "<group>"; };
+		5278995421A48AA000F01F18 /* dna.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dna.pdb; sourceTree = "<group>"; };
+		5278995521A48AA000F01F18 /* 1CF7.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1CF7.pdb; sourceTree = "<group>"; };
+		5278995621A48AA000F01F18 /* trp.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trp.pdb; sourceTree = "<group>"; };
+		5278995721A48AA000F01F18 /* benzene.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = benzene.pdb; sourceTree = "<group>"; };
+		5278995821A48AA000F01F18 /* 3INS.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3INS.pdb; sourceTree = "<group>"; };
+		5278995921A48AA000F01F18 /* hemeco.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hemeco.pdb; sourceTree = "<group>"; };
+		5278995A21A48AA000F01F18 /* plp.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plp.pdb; sourceTree = "<group>"; };
+		5278995B21A48AA000F01F18 /* lys195k.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lys195k.pdb; sourceTree = "<group>"; };
+		5278995C21A48AA000F01F18 /* zdna.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zdna.pdb; sourceTree = "<group>"; };
+		5278995D21A48AA000F01F18 /* gc-zdna.pdb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "gc-zdna.pdb"; sourceTree = "<group>"; };
+		5278998121A48C1F00F01F18 /* SCNVector3Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNVector3Extensions.swift; sourceTree = "<group>"; };
+		5278998321A48C5D00F01F18 /* Colour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colour.swift; sourceTree = "<group>"; };
+		5278998521A48C5D00F01F18 /* ColourFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColourFactory.swift; sourceTree = "<group>"; };
+		5278998621A48C5D00F01F18 /* RadiusFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusFactory.swift; sourceTree = "<group>"; };
+		5278998721A48C5D00F01F18 /* RenderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderFactory.swift; sourceTree = "<group>"; };
+		5278998D21A48C7100F01F18 /* MoleculeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeTableViewController.swift; sourceTree = "<group>"; };
+		5278998E21A48C7100F01F18 /* MoleculeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoleculeViewController.swift; sourceTree = "<group>"; };
+		5278999321A4914400F01F18 /* PDBRestWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDBRestWebService.swift; sourceTree = "<group>"; };
+		5278999421A4914400F01F18 /* PDBLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDBLoader.swift; sourceTree = "<group>"; };
+		5278999721A4917600F01F18 /* Octree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Octree.swift; sourceTree = "<group>"; };
+		5278999821A4917600F01F18 /* Molecule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
+		5278999921A4917600F01F18 /* AtomCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomCloud.swift; sourceTree = "<group>"; };
+		5278999A21A4917600F01F18 /* PeriodicTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodicTable.swift; sourceTree = "<group>"; };
+		5278999B21A4917600F01F18 /* Point3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point3D.swift; sourceTree = "<group>"; };
+		5278999C21A4917600F01F18 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
+		5278999D21A4917600F01F18 /* SecondaryStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryStructure.swift; sourceTree = "<group>"; };
+		5278999E21A4917600F01F18 /* Bond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bond.swift; sourceTree = "<group>"; };
+		5278999F21A4917700F01F18 /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		527899A021A4917700F01F18 /* Residue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Residue.swift; sourceTree = "<group>"; };
+		527899A121A4917700F01F18 /* Atom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atom.swift; sourceTree = "<group>"; };
+		52C98A8A21A5B5AC000817A7 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +155,113 @@
 		5278992E21A4863100F01F18 /* Mole */ = {
 			isa = PBXGroup;
 			children = (
+				5278998021A48BEB00F01F18 /* Model */,
+				5278997F21A48BDC00F01F18 /* Data */,
+				5278997E21A48BC300F01F18 /* Utilities */,
+				5278997C21A48AD600F01F18 /* Views */,
+				5278993F21A48AA000F01F18 /* pdb */,
 				5278992F21A4863100F01F18 /* AppDelegate.swift */,
-				5278993121A4863100F01F18 /* ViewController.swift */,
-				5278993321A4863100F01F18 /* Assets.xcassets */,
+				527133D021A6004D006C9521 /* Assets.xcassets */,
 				5278993521A4863100F01F18 /* Main.storyboard */,
 				5278993821A4863100F01F18 /* Info.plist */,
 				5278993921A4863100F01F18 /* Mole.entitlements */,
 			);
 			path = Mole;
+			sourceTree = "<group>";
+		};
+		5278993F21A48AA000F01F18 /* pdb */ = {
+			isa = PBXGroup;
+			children = (
+				5278994021A48AA000F01F18 /* b12.pdb */,
+				5278994121A48AA000F01F18 /* graphite.pdb */,
+				5278994221A48AA000F01F18 /* cys.pdb */,
+				5278994321A48AA000F01F18 /* 1iyu.pdb */,
+				5278994421A48AA000F01F18 /* hemeo2.pdb */,
+				5278994521A48AA000F01F18 /* pcl5.pdb */,
+				5278994621A48AA000F01F18 /* igg1-cac.pdb */,
+				5278994721A48AA000F01F18 /* ala.pdb */,
+				5278994821A48AA000F01F18 /* atp.pdb */,
+				5278994921A48AA000F01F18 /* diamond.pdb */,
+				5278994A21A48AA000F01F18 /* 132l.pdb */,
+				5278994B21A48AA000F01F18 /* 1CRN.pdb */,
+				5278994C21A48AA000F01F18 /* octane.pdb */,
+				5278994D21A48AA000F01F18 /* nacl.pdb */,
+				5278994E21A48AA000F01F18 /* fullerene.pdb */,
+				5278994F21A48AA000F01F18 /* 1pse.pdb */,
+				5278995021A48AA000F01F18 /* 1bbe.pdb */,
+				5278995121A48AA000F01F18 /* c2h2.pdb */,
+				5278995221A48AA000F01F18 /* streptomycin.pdb */,
+				5278995321A48AA000F01F18 /* 3RFM.pdb */,
+				5278995421A48AA000F01F18 /* dna.pdb */,
+				5278995521A48AA000F01F18 /* 1CF7.pdb */,
+				5278995621A48AA000F01F18 /* trp.pdb */,
+				5278995721A48AA000F01F18 /* benzene.pdb */,
+				5278995821A48AA000F01F18 /* 3INS.pdb */,
+				5278995921A48AA000F01F18 /* hemeco.pdb */,
+				5278995A21A48AA000F01F18 /* plp.pdb */,
+				5278995B21A48AA000F01F18 /* lys195k.pdb */,
+				5278995C21A48AA000F01F18 /* zdna.pdb */,
+				5278995D21A48AA000F01F18 /* gc-zdna.pdb */,
+			);
+			path = pdb;
+			sourceTree = "<group>";
+		};
+		5278997C21A48AD600F01F18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52C98A8A21A5B5AC000817A7 /* SplitViewController.swift */,
+				5278998D21A48C7100F01F18 /* MoleculeTableViewController.swift */,
+				5278998E21A48C7100F01F18 /* MoleculeViewController.swift */,
+				527133CE21A5FCAD006C9521 /* WindowController.swift */,
+				5278997D21A48BBB00F01F18 /* Rendering */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5278997D21A48BBB00F01F18 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				5278998321A48C5D00F01F18 /* Colour.swift */,
+				5278998521A48C5D00F01F18 /* ColourFactory.swift */,
+				5278998621A48C5D00F01F18 /* RadiusFactory.swift */,
+				5278998721A48C5D00F01F18 /* RenderFactory.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		5278997E21A48BC300F01F18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5278998121A48C1F00F01F18 /* SCNVector3Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5278997F21A48BDC00F01F18 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5278999421A4914400F01F18 /* PDBLoader.swift */,
+				5278999321A4914400F01F18 /* PDBRestWebService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5278998021A48BEB00F01F18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				527899A121A4917700F01F18 /* Atom.swift */,
+				5278999921A4917600F01F18 /* AtomCloud.swift */,
+				5278999E21A4917600F01F18 /* Bond.swift */,
+				5278999C21A4917600F01F18 /* Chain.swift */,
+				5278999821A4917600F01F18 /* Molecule.swift */,
+				5278999721A4917600F01F18 /* Octree.swift */,
+				5278999A21A4917600F01F18 /* PeriodicTable.swift */,
+				5278999B21A4917600F01F18 /* Point3D.swift */,
+				527899A021A4917700F01F18 /* Residue.swift */,
+				5278999D21A4917600F01F18 /* SecondaryStructure.swift */,
+				5278999F21A4917700F01F18 /* State.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,8 +322,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5278993421A4863100F01F18 /* Assets.xcassets in Resources */,
+				5278997221A48AA000F01F18 /* dna.pdb in Resources */,
+				5278996321A48AA000F01F18 /* pcl5.pdb in Resources */,
+				5278997421A48AA000F01F18 /* trp.pdb in Resources */,
+				5278995F21A48AA000F01F18 /* graphite.pdb in Resources */,
+				5278997021A48AA000F01F18 /* streptomycin.pdb in Resources */,
+				5278996A21A48AA000F01F18 /* octane.pdb in Resources */,
+				5278995E21A48AA000F01F18 /* b12.pdb in Resources */,
+				5278997A21A48AA000F01F18 /* zdna.pdb in Resources */,
+				5278996721A48AA000F01F18 /* diamond.pdb in Resources */,
+				5278997821A48AA000F01F18 /* plp.pdb in Resources */,
+				5278996E21A48AA000F01F18 /* 1bbe.pdb in Resources */,
+				5278996421A48AA000F01F18 /* igg1-cac.pdb in Resources */,
+				5278996921A48AA000F01F18 /* 1CRN.pdb in Resources */,
+				5278997121A48AA000F01F18 /* 3RFM.pdb in Resources */,
+				5278996821A48AA000F01F18 /* 132l.pdb in Resources */,
+				5278997321A48AA000F01F18 /* 1CF7.pdb in Resources */,
+				5278996521A48AA000F01F18 /* ala.pdb in Resources */,
+				5278997521A48AA000F01F18 /* benzene.pdb in Resources */,
+				5278997B21A48AA000F01F18 /* gc-zdna.pdb in Resources */,
+				5278996F21A48AA000F01F18 /* c2h2.pdb in Resources */,
+				5278996B21A48AA000F01F18 /* nacl.pdb in Resources */,
+				5278996221A48AA000F01F18 /* hemeo2.pdb in Resources */,
+				5278996621A48AA000F01F18 /* atp.pdb in Resources */,
+				5278996D21A48AA000F01F18 /* 1pse.pdb in Resources */,
+				5278997621A48AA000F01F18 /* 3INS.pdb in Resources */,
+				5278997721A48AA000F01F18 /* hemeco.pdb in Resources */,
+				5278996021A48AA000F01F18 /* cys.pdb in Resources */,
+				5278996121A48AA000F01F18 /* 1iyu.pdb in Resources */,
+				5278997921A48AA000F01F18 /* lys195k.pdb in Resources */,
 				5278993721A4863100F01F18 /* Main.storyboard in Resources */,
+				527133D121A6004D006C9521 /* Assets.xcassets in Resources */,
+				5278996C21A48AA000F01F18 /* fullerene.pdb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,8 +364,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5278993221A4863100F01F18 /* ViewController.swift in Sources */,
+				5278998A21A48C5D00F01F18 /* ColourFactory.swift in Sources */,
+				527899A521A4917700F01F18 /* PeriodicTable.swift in Sources */,
+				5278999621A4914400F01F18 /* PDBLoader.swift in Sources */,
+				527899AA21A4917700F01F18 /* State.swift in Sources */,
+				527899A621A4917700F01F18 /* Point3D.swift in Sources */,
+				527899AB21A4917700F01F18 /* Residue.swift in Sources */,
+				527899A421A4917700F01F18 /* AtomCloud.swift in Sources */,
+				5278999521A4914400F01F18 /* PDBRestWebService.swift in Sources */,
+				527899A721A4917700F01F18 /* Chain.swift in Sources */,
+				5278998221A48C1F00F01F18 /* SCNVector3Extensions.swift in Sources */,
+				5278998B21A48C5D00F01F18 /* RadiusFactory.swift in Sources */,
 				5278993021A4863100F01F18 /* AppDelegate.swift in Sources */,
+				527899A321A4917700F01F18 /* Molecule.swift in Sources */,
+				527899A821A4917700F01F18 /* SecondaryStructure.swift in Sources */,
+				5278999121A48C7200F01F18 /* MoleculeViewController.swift in Sources */,
+				527899A221A4917700F01F18 /* Octree.swift in Sources */,
+				527899A921A4917700F01F18 /* Bond.swift in Sources */,
+				5278999021A48C7200F01F18 /* MoleculeTableViewController.swift in Sources */,
+				5278998C21A48C5D00F01F18 /* RenderFactory.swift in Sources */,
+				527133CF21A5FCAD006C9521 /* WindowController.swift in Sources */,
+				527899AC21A4917700F01F18 /* Atom.swift in Sources */,
+				5278998821A48C5D00F01F18 /* Colour.swift in Sources */,
+				52C98A8B21A5B5AC000817A7 /* SplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
